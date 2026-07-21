@@ -2,11 +2,11 @@ package com.eaf.base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import com.eaf.config.ConfigReader;
 
 public class DriverFactory {
 	public static WebDriver getDriver() {
+		// Read the browser type from config.properties file
 		String browser = ConfigReader.getProperty("browser");
 		if(browser.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
