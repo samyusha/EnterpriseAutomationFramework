@@ -6,3 +6,6 @@ bin/
 .classpath
 .project
 .settings/
+
+#testng files
+test-output/
